@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
-import './App.css';
-import { Input } from 'antd';
-import Repositories from './Repositories';
+import React from 'react';
+import Demo from './dmeo/Foo';
+import Bar from './dmeo/Bar';
 
 function App() {
-  const [userId, setUserId] = useState('');
-
   return (
-    <div className="App">
-      <div>
-        <Input value={userId} onChange={(e) => setUserId(e.target.value.trim())} />
-      </div>
-      <Repositories isOpen={true} userId={userId} />
+    <div>
+      <Bar />
+      <Demo />
     </div>
   );
 }
